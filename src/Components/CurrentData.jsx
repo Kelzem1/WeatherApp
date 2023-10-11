@@ -1,6 +1,7 @@
-const CurrentData = ({grados, weather, weatherImage})=>{
+const CurrentData = ({grados, weather, weatherImage, city})=>{
     return(
-        <div className="bg-gradient-to-t from-slate-600 w-2/3">
+        <div className="from-slate-200 w-4/5 m-auto flex-col self-center">
+            <h1>{city}</h1>
             <h1>{grados}</h1>
             <h2>{weather}</h2>
             <span>{weatherImage}</span>
