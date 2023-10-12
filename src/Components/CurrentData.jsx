@@ -1,10 +1,11 @@
-const CurrentData = ({grados, weather, weatherImage, city})=>{
+import GetApi from "./Services/GetApi"
+
+const CurrentData = ({grados, weather, city})=>{
     return(
-        <div className="from-slate-200 w-4/5 m-auto flex-col self-center">
+        <div className="bg-sky-400 mt-2 p-5 text-stone-200 w-2/12 m-auto flex-col justify-center self-center rounded-sm">
             <h1>{city}</h1>
             <h1>{grados}</h1>
             <h2>{weather}</h2>
-            <span>{weatherImage}</span>
         </div>
     )
 }

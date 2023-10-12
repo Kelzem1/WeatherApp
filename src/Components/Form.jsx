@@ -11,11 +11,11 @@ const Form = ({newLocation}) => {
         newLocation(city)
         }
         return(
-            <div>
+            <div className="bg-slate-700 w-5/12 m-auto mb-10 p-3 text-stone-200">
                 <form onSubmit={onSubmit}>
                     <div>
                         <input type="text" className="form-contrl" placeholder="City" onChange={(e) =>setCity(e.target.value)}/>
-                        <button className="" type="submit">Search</button>
+                        <button className="pl-3" type="submit">Search</button>
                     </div>
                 </form>
             </div>

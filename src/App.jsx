@@ -6,9 +6,9 @@ import GetApi from './Components/Services/GetApi'
 function App() {
 
   return (
-   <div className=' bg-slate-100 font-bold flex-col w-auto h-full'>
+   <div className=' bg-slate-950 flex-col h-screen'>
       <GetApi />
-      <div className='flex-col'>
+      <div className='flex-col text-center'>
         <CurrentData grados={20} weather={'Llueve'} city={'Nerja'}/>
         <Cards title="Hola" days="2"/>
       </div>
