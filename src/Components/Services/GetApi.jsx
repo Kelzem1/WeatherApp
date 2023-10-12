@@ -1,5 +1,5 @@
 import { useState } from "react"
-import CurrentData from "../CurrentData"
+import Form from "../Form"
 
 const ApiKey = '147ed690441ebcf171c54ca58cdd922d'
 
@@ -63,9 +63,8 @@ const GetApi = () =>{
   }
 
   return(
-    <div>
-      <CurrentData grados={weatherData} />
-    </div>
+      <Form newLocation={getLocation}/>
+  
   )
 
 }
