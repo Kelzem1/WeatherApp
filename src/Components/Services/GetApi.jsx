@@ -1,6 +1,7 @@
-import { useState } from "react"
+import { Fragment, useState } from "react"
 import Form from "../Form"
 import CurrentData from '../CurrentData'
+import Cards from "../Cards"
 
 const ApiKey = '147ed690441ebcf171c54ca58cdd922d'
 
@@ -64,10 +65,20 @@ const GetApi = () =>{
   }
 
   return(
-    <>
+    <Fragment>
       <Form newLocation={getLocation}/>
-      <CurrentData newGrados={setWeather}/>
-    </>
+
+      <Cards
+      showData = {show}
+      loadingData = {loading}
+      weather = {weather}
+      forecast = {forecast}
+       />
+    </Fragment>
+      
+
+      
+
       
     
       
