@@ -10,10 +10,9 @@ function App() {
       <GetApi />
       <div className='flex-col text-center'>
         <CurrentData grados={20} weather={'Llueve'} city={'Nerja'}/>
-        <Cards title="Hola" days="2"/>
+        <Cards />
+        
       </div>
-    
-    
    </div>
   )
 }

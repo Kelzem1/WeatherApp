@@ -68,11 +68,10 @@ const GetApi = () =>{
     <Fragment>
       <Form newLocation={getLocation}/>
 
-      <Cards
+      <CurrentData
       showData = {show}
       loadingData = {loading}
       weather = {weather}
-      forecast = {forecast}
        />
     </Fragment>
       
