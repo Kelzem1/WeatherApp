@@ -1,10 +1,8 @@
-import GetApi from "./Services/GetApi"
-import Spinner from "./Spinner"
+
+import Date from "./Date"
 
 const CurrentData = ({loadingData, showData, weather})=>{
-    if (loadingData){
-        return <Spinner />
-    }
+   
     return(
         <div>
                {

@@ -1,4 +1,4 @@
-import Spinner from "./Spinner"
+
 
 const Cards =({loadingData, showData, weather,})=>{
 
