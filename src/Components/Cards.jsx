@@ -17,7 +17,7 @@ const Cards =({loadingData, showData, weather,})=>{
 
                             </div>
                             <div>
-
+                                <h1>Predicciones</h1>
                             </div>
 
                         </div>
