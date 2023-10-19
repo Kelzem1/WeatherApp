@@ -1,10 +1,8 @@
 
 
-const Cards =({loadingData, showData, weather,})=>{
+const Cards =({loadingData, showData, forecast})=>{
 
-    if (loadingData){
-        return <Spinner />
-    }
+
 
     return(
         <div className="">

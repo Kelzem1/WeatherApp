@@ -72,6 +72,7 @@ const GetApi = () =>{
       showData = {show}
       loadingData = {loading}
       weather = {weather}
+      forecast = {forecast}
        />
     </Fragment>
       
