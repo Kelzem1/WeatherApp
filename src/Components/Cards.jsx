@@ -23,7 +23,7 @@ const Cards =({loadingData, showData, forecast})=>{
 
                 </div>
             ):(
-                <h2>Sin datos</h2>
+                <h2></h2>
             )
           }
 

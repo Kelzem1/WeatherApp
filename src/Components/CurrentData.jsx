@@ -22,35 +22,43 @@ const CurrentData = ({loadingData, showData, weather})=>{
     
    
     return(
-        <div className="flex justify-center align-middle mt-12 opacity-80">
+        <div className="flex justify-center align-middle mt-12 opacity-80 tracking-widest">
                {
                 showData === true ? (
-            <div className="flex justify-center align-middle p-10 bg-teal-900 text-stone-200 w-5/12 rounded-xl gap-10 border border-indigo-200">
+            <div className="justify-center align-middle p-5 bg-indigo-500 bg-opacity-60 text-stone-100 w-6/12 rounded-sm gap-10 shadow-xl">
+                <div className="w-6/12 border-r-2 flex-col justify-center align-middle">
 
-                <div className="flex-col w-4/12 justify-center align-middle border-r-2 p-3">
+                   <div className="flex-col w-6/12 justify-center align-middle m-auto p-3">
                     <h1 className="text-center text-2xl font-semibold">{weather.name}</h1>
                     <h1 className="text-center">{date}</h1> 
                      
                 </div>
                 
-                <div className="flex-col justify-center w-4/12 align-middle p-3">
+                <div className="flex-col justify-center w-6/12 m-auto p-3">
                     <p className="text-center">{(weather.main.temp_max -273.15).toFixed(1)}</p>
-                    <h1 className="text-center text-3xl font-bold">{(weather.main.temp -273.15).toFixed(1)}C</h1>
+                    <h1 className="text-center flex text-5xl justify-center font-bold">{(weather.main.temp -273.15).toFixed(1)}C</h1>
                     <p className="text-center">{(weather.main.temp_min -273.15).toFixed(1)}</p>
                 </div>
-                <div className="flex-col w-4/12 p-3 border-l-2">
-                    <p className=""><img src={iconUrl} alt="icon" /></p>
+                <div className="flex-col justify-center text-center w-6/12 m-auto p-3">
+                    <p className="flex justify-center"><img src={iconUrl} alt="icon" /></p>
                     <h2 className="capitalize">{weather.weather[0].description}</h2>
                     
+                </div> 
                 </div>
                 
+
+            
+                
+                 
             </div>
-           
+
+                
             
             ):(
-                <h2>Sin datos</h2>
+                <h2></h2>
             )
         }
+                
         </div>
      
        
