@@ -1,6 +1,6 @@
 import './App.css'
-import Cards from './Components/Cards'
 import CurrentData from './Components/CurrentData'
+import Forecast from './Components/Forecast'
 import GetApi from './Components/Services/GetApi'
 
 function App() {
@@ -10,7 +10,6 @@ function App() {
       <GetApi />
       <div className='flex-col text-center'>
         <CurrentData />
-        <Cards />
         
       </div>
    </div>

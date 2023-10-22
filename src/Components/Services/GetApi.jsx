@@ -1,7 +1,7 @@
 import { Fragment, useState } from "react"
 import Form from "../Form"
 import CurrentData from '../CurrentData'
-import Cards from "../Cards"
+import Cards from "../Forecast"
 
 const ApiKey = '147ed690441ebcf171c54ca58cdd922d'
 

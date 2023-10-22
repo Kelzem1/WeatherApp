@@ -1,4 +1,4 @@
-
+import Forecast from "./Forecast"
 
 
 const CurrentData = ({loadingData, showData, weather})=>{
@@ -46,7 +46,7 @@ const CurrentData = ({loadingData, showData, weather})=>{
                 </div> 
                 </div>
                 
-                 
+                 <Forecast />
             </div>
 
                 
