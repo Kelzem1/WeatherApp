@@ -8,7 +8,7 @@ function App() {
   return (
    <div className=' bg-gray-300 flex-col h-screen'>
       <GetApi />
-      <div className='flex-col text-center'>
+      <div className='flex-col'>
         <CurrentData />
         
       </div>
