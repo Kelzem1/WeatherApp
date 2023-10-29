@@ -35,10 +35,10 @@ const CurrentData = ({loadingData, showData, weather})=>{
                 </div>
                 
                 <div className="flex-col justify-center w-6/12 m-auto p-3">
-                    <h1 className="text-center font-semibold p-1 text-xl">Temperatura: </h1>
-                    <p className="text-center">{(weather.main.temp_max -273.15).toFixed(1)}</p>
-                    <h1 className="text-center flex text-5xl justify-center font-bold p-5">{(weather.main.temp -273.15).toFixed(1)}C</h1>
-                    <p className="text-center">{(weather.main.temp_min -273.15).toFixed(1)}</p>
+                    <h1 className="text-center font-semibold pb-3 text-xl">Temperatura: </h1>
+                    <p className="text-center">{(weather.main.temp_max -273.15).toFixed(1) + "°C"}</p>
+                    <h1 className="text-center flex text-5xl justify-center font-bold p-5">{(weather.main.temp -273.15).toFixed(1) + "°C"}</h1>
+                    <p className="text-center">{(weather.main.temp_min -273.15).toFixed(1) + "°C"}</p>
                 </div>
                 <div className="flex-col justify-center text-center w-6/12 m-auto p-3">
                     <p className="flex justify-center"><img src={iconUrl} alt="icon" /></p>
@@ -52,15 +52,15 @@ const CurrentData = ({loadingData, showData, weather})=>{
                 <div className="flex-col w-6/12 justify-center align-middle m-auto">
                     <div className="flex">
                         <p>Viento: </p>
-                        <p>{weather.wind.speed}</p>
+                        <p>{(weather.wind.speed * 3.6).toFixed(1) + "km/h"}</p>
                     </div>
                     <div className="flex">
                         <p>Sensacion termica: </p>
-                        <p>{weather.main.feels_like}</p>
+                        <p>{(weather.main.feels_like -273.15 ).toFixed(0) + "°C"}</p>
                     </div>
                     <div className="flex">
                         <p>Humedad: </p>
-                        <p>{weather.main.humidity}</p>
+                        <p>{weather.main.humidity + "%"}</p>
                     </div>
                 </div>
             </div>
