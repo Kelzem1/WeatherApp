@@ -26,7 +26,7 @@ const CurrentData = ({loadingData, showData, weather})=>{
                {
                 showData === true ? (
             <div className="flex justify-center align-middle p-5 bg-indigo-300 bg-opacity-60 text-neutral-950 w-6/12 rounded-sm gap-10 shadow-xl">
-            <div className="w-6/12 flex-col justify-center">
+            <div className="w-6/12 flex-col border-r-2 border-black justify-center">
 
                    <div className="flex-col w-6/12 justify-center align-middle m-auto p-3">
                     <h1 className="text-center text-2xl font-semibold">{weather.name}</h1>
@@ -50,9 +50,18 @@ const CurrentData = ({loadingData, showData, weather})=>{
 
             <div className="w-6/12">
                 <div className="flex-col w-6/12 justify-center align-middle m-auto">
-                    <p>viento:</p>
-                    <p>Sensacion termica:</p>
-                    <p>Humedad:</p>
+                    <div className="flex">
+                        <p>Viento: </p>
+                        <p>{weather.wind.speed}</p>
+                    </div>
+                    <div className="flex">
+                        <p>Sensacion termica: </p>
+                        <p>{weather.main.feels_like}</p>
+                    </div>
+                    <div className="flex">
+                        <p>Humedad: </p>
+                        <p>{weather.main.humidity}</p>
+                    </div>
                 </div>
             </div>
                 
