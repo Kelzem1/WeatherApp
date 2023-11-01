@@ -75,7 +75,8 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
                         <p className="flex justify-center"><img src={iconUrl} alt="icon" /></p>
                         <h2 className="capitalize">{weather.weather[0].description}</h2>
                         
-                </div> 
+                </div>
+                
             </div>
 
             <div className="w-6/12">
@@ -93,6 +94,29 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
                         <p>{weather.main.humidity + "%"}</p>
                     </div>
                 </div>
+                <hr />
+                
+                <div className="forecast-4 flex">
+                    <div className="fore3h">
+                    <p>{forecastDate3}</p>
+                    <p className="flex-col"><img src={iconUrl3} alt="icon" /></p>
+                    </div>
+
+                    <div className="fore6h">
+                    <p>{forecastDate6}</p>
+                    <p className="flex"><img src={iconUrl6} alt="icon" /></p>
+                    </div>
+
+                    <div className="fore9h">
+                    <p>{forecastDate9}</p>
+                    <p className="flex"><img src={iconUrl9} alt="icon" /></p>
+                    </div>
+                    <p className="flex"><img src={iconUrl12} alt="icon" /></p>
+                    <div className="fore12h">
+                        
+                    </div>
+                </div>
+
             </div>
                 
                  
