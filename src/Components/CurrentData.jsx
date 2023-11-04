@@ -60,7 +60,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
         <div className="flex justify-center align-middle mt-12 opacity-80 tracking-widest">
                {
                 showData === true ? (
-            <div className="flex justify-center align-middle p-5 bg-indigo-300 bg-opacity-60 text-neutral-950 w-6/12 rounded-sm gap-10 shadow-xl">
+            <div className="flex justify-center align-middle p-5 bg-indigo-300 bg-opacity-60 text-neutral-950 w-7/12 rounded-sm gap-3 shadow-xl">
                 <div className="w-6/12 flex-col border-r-2 border-black justify-center">
 
                     <div className="flex-col w-6/12 justify-center align-middle m-auto p-3">
@@ -101,53 +101,55 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
                 
                 <div className="forecast-4 flex">
 
-                    <div className="fore3h flex-col">
-                    <p>{forecastDate3}h</p>
-                    <p>{(forecast.list[1].main.temp -273.15).toFixed(1) +"°C"} </p>
+                    <div className="fore3h flex-col bg-slate-400 rounded-lg m-1 mt-4 p-2">
 
-                    <p className="">
-                    <img src={iconUrl3} alt="icon" />
-                    {forecast.list[1].weather[0].description}
-                    </p>
+                        <p>{forecastDate3}h</p>
+                        <p>{(forecast.list[1].main.temp -273.15).toFixed(1) +"°C"} </p>
 
-                    </div>
-
-                    <div className="fore6h flex-col">
-                    <p>{forecastDate6}h</p>
-                    <p>{(forecast.list[2].main.temp -273.15).toFixed(1) +"°C"} </p>
-
-                    <p className="">
-                    <img src={iconUrl6} alt="icon" />
-                    {forecast.list[2].weather[0].description}
-                    </p>
+                        <p className="">
+                        <img src={iconUrl3} alt="icon" />
+                        {forecast.list[1].weather[0].description}
+                        </p>
 
                     </div>
 
-                    <div className="fore9h flex-col">
-                    <p>{forecastDate9}h</p>
-                    <p>{(forecast.list[3].main.temp -273.15).toFixed(1) +"°C"} </p>
+                    <div className="fore6h flex-col bg-slate-400 rounded-lg m-1 mt-4 p-2">
 
-                    <p className=""><img src={iconUrl9} alt="icon" />
-                    {forecast.list[3].weather[0].description}
-                    </p>
+                        <p>{forecastDate6}h</p>
+                        <p>{(forecast.list[2].main.temp -273.15).toFixed(1) +"°C"} </p>
+
+                        <p className="">
+                        <img src={iconUrl6} alt="icon" />
+                        {forecast.list[2].weather[0].description}
+                        </p>
+
+                    </div>
+
+                    <div className="fore9h flex-col bg-slate-400 rounded-lg m-1 mt-4 p-2">
+
+                        <p>{forecastDate9}h</p>
+                        <p>{(forecast.list[3].main.temp -273.15).toFixed(1) +"°C"} </p>
+
+                        <p className="">
+                        <img src={iconUrl9} alt="icon" />
+                        {forecast.list[3].weather[0].description}
+                        </p>
 
                     </div>
                     
-                    <div className="fore12h">
-                    <p>{forecastDate12}h</p>
-                    <p>{(forecast.list[4].main.temp -273.15).toFixed(1) +"°C"} </p>
+                    <div className="fore12h bg-slate-400 rounded-lg m-1 mt-4 p-1">
 
-                    <p className=""><img src={iconUrl12} alt="icon" />
-                    {forecast.list[4].weather[0].description}
-                    </p>
+                        <p>{forecastDate12}h</p>
+                        <p>{(forecast.list[4].main.temp -273.15).toFixed(1) +"°C"} </p>
+
+                        <p className=""><img src={iconUrl12} alt="icon" />
+                        {forecast.list[4].weather[0].description}
+                        </p>
 
                     </div>
                 </div>
-
-            </div>
-                
-                 
-            </div>
+            </div>           
+         </div>
             
 
                 
