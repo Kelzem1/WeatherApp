@@ -101,7 +101,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
                 
                 <div className="forecast-4 flex">
 
-                    <div className="fore3h flex-col bg-slate-400 rounded-lg m-1 mt-4 p-2">
+                    <div className="fore3h flex-col w-1/4 bg-indigo-300 rounded-lg m-1 mt-4 p-2">
 
                         <p>{forecastDate3}h</p>
                         <p>{(forecast.list[1].main.temp -273.15).toFixed(1) +"°C"} </p>
@@ -113,7 +113,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
 
                     </div>
 
-                    <div className="fore6h flex-col bg-slate-400 rounded-lg m-1 mt-4 p-2">
+                    <div className="fore6h flex-col w-1/4 bg-indigo-300 rounded-lg m-1 mt-4 p-2">
 
                         <p>{forecastDate6}h</p>
                         <p>{(forecast.list[2].main.temp -273.15).toFixed(1) +"°C"} </p>
@@ -125,7 +125,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
 
                     </div>
 
-                    <div className="fore9h flex-col bg-slate-400 rounded-lg m-1 mt-4 p-2">
+                    <div className="fore9h flex-col 2 w-1/4 bg-indigo-300 rounded-lg m-1 mt-4 p-2">
 
                         <p>{forecastDate9}h</p>
                         <p>{(forecast.list[3].main.temp -273.15).toFixed(1) +"°C"} </p>
@@ -137,7 +137,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
 
                     </div>
                     
-                    <div className="fore12h bg-slate-400 rounded-lg m-1 mt-4 p-1">
+                    <div className="fore12h flex-col w-1/4 bg-indigo-300 rounded-lg m-1 mt-4 p-1">
 
                         <p>{forecastDate12}h</p>
                         <p>{(forecast.list[4].main.temp -273.15).toFixed(1) +"°C"} </p>
