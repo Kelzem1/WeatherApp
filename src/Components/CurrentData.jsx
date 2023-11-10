@@ -1,4 +1,4 @@
-import Forecast from "./Forecast"
+
 
 
 const CurrentData = ({loadingData, showData, weather, forecast})=>{
@@ -57,10 +57,10 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
     
    
     return(
-        <div className="flex justify-center align-middle mt-12 opacity-80 tracking-widest">
+        <div className="flex justify-center align-middle mt-12 opacity-80 tracking-widest text-yellow-50">
                {
                 showData === true ? (
-            <div className="flex justify-center align-middle p-5 bg-indigo-300 bg-opacity-60 text-neutral-950 w-7/12 rounded-sm gap-3 shadow-xl">
+            <div className="flex justify-center align-middle p-5 bg-indigo-500 bg-opacity-90 text-neutral-950 w-7/12 rounded-sm gap-3 shadow-xl">
                 <div className="w-6/12 flex-col border-r-2 border-black justify-center">
 
                     <div className="flex-col w-6/12 justify-center align-middle m-auto p-3">
