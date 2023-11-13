@@ -60,7 +60,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
         <div className="flex justify-center align-middle mt-12 opacity-80 tracking-widest text-yellow-50">
                {
                 showData === true ? (
-            <div className="flex justify-center align-middle p-5 bg-indigo-500 bg-opacity-90 text-neutral-950 w-7/12 rounded-sm gap-3 shadow-xl">
+            <div className="flex justify-center align-middle p-5 bg-teal-200 bg-opacity-40 text-neutral-950 w-7/12 rounded-sm gap-3 shadow-xl">
                 <div className="w-6/12 flex-col border-r-2 border-black justify-center">
 
                     <div className="flex-col w-6/12 justify-center align-middle m-auto p-3">
@@ -83,17 +83,17 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
             </div>
 
             <div className="w-6/12">
-                <div className="flex-col w-6/12 justify-center align-middle m-auto">
+                <div className="flex-col w-6/12 justify-center align-middle p-4">
                     <div className="flex">
-                        <p>Viento: </p>
+                        <p className="font-bold pr-2">Viento: </p>
                         <p>{(weather.wind.speed * 3.6).toFixed(1) + "km/h"}</p>
                     </div>
                     <div className="flex">
-                        <p>Sensacion termica: </p>
+                        <p className="font-bold pr-2">Sensacion termica: </p>
                         <p>{(weather.main.feels_like -273.15 ).toFixed(0) + "°C"}</p>
                     </div>
                     <div className="flex">
-                        <p>Humedad: </p>
+                        <p className="font-bold pr-2">Humedad:</p>
                         <p>{weather.main.humidity + "%"}</p>
                     </div>
                 </div>
@@ -101,7 +101,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
                 
                 <div className="forecast-4 flex">
 
-                    <div className="fore3h flex-col w-1/4 bg-indigo-300 rounded-lg m-1 mt-4 p-2">
+                    <div className="fore3h flex-col w-1/4 bg-yellow-100 rounded-lg m-1 mt-4 p-2">
 
                         <p>{forecastDate3}h</p>
                         <p>{(forecast.list[1].main.temp -273.15).toFixed(1) +"°C"} </p>
@@ -113,7 +113,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
 
                     </div>
 
-                    <div className="fore6h flex-col w-1/4 bg-indigo-300 rounded-lg m-1 mt-4 p-2">
+                    <div className="fore6h flex-col w-1/4 bg-yellow-100 rounded-lg m-1 mt-4 p-2">
 
                         <p>{forecastDate6}h</p>
                         <p>{(forecast.list[2].main.temp -273.15).toFixed(1) +"°C"} </p>
@@ -125,7 +125,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
 
                     </div>
 
-                    <div className="fore9h flex-col 2 w-1/4 bg-indigo-300 rounded-lg m-1 mt-4 p-2">
+                    <div className="fore9h flex-col 2 w-1/4 bg-yellow-100 rounded-lg m-1 mt-4 p-2">
 
                         <p>{forecastDate9}h</p>
                         <p>{(forecast.list[3].main.temp -273.15).toFixed(1) +"°C"} </p>
@@ -137,7 +137,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
 
                     </div>
                     
-                    <div className="fore12h flex-col w-1/4 bg-indigo-300 rounded-lg m-1 mt-4 p-1">
+                    <div className="fore12h flex-col w-1/4 bg-yellow-100 rounded-lg m-1 mt-4 p-1">
 
                         <p>{forecastDate12}h</p>
                         <p>{(forecast.list[4].main.temp -273.15).toFixed(1) +"°C"} </p>

@@ -5,10 +5,10 @@ import GetApi from './Components/Services/GetApi'
 function App() {
 
   return (
-   <div className=' bg-gray-900 flex-col h-screen'>
+   <div className='bg-teal-600 flex-col h-screen'>
       <GetApi />
       <div className='flex-col'>
-        <CurrentData />
+      <CurrentData />
         
       </div>
    </div>
