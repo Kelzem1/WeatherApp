@@ -1,7 +1,7 @@
-import getDayName from "./getDayofWeek"
 
 
-const CurrentData = ({loadingData, showData, weather, forecast})=>{
+
+const CurrentData = ({showData, weather, forecast})=>{
 
 
     let today = new Date()
@@ -27,12 +27,12 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
     //End Predicciones
     
     //Fecha de predicciones
-    let forecastDate3 = forecast.list[2].dt_txt.substring(8, 10) + '/' + forecast.list[2].dt_txt.substring(5, 7) + '/' + forecast.list[2].dt_txt.substring(0, 4) + ' ' + forecast.list[2].dt_txt.substring(11, 13)
-    const getNameData = getDayName(forecastDate3)
     
+    let forecastDate3 = ""
     let forecastDate6 = ""
     let forecastDate9 = ""
     let forecastDate12 = ""
+
 
     if(showData) {
         url = "http://openweathermap.org/img/w/"
@@ -43,7 +43,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
         iconUrl9 = url + forecast.list[3].weather[0].icon + ".png"
         iconUrl12 = url + forecast.list[4].weather[0].icon + ".png"
 
-        forecastDate3
+        forecastDate3 = forecast.list[1].dt_txt.substring(8, 10) + '/' + forecast.list[1].dt_txt.substring(5, 7) + '/' + forecast.list[1].dt_txt.substring(0, 4) + ' ' + forecast.list[2].dt_txt.substring(11, 13)
 
         forecastDate6 = forecast.list[2].dt_txt.substring(8, 10) + '/' + forecast.list[2].dt_txt.substring(5, 7) + '/' + forecast.list[2].dt_txt.substring(0, 4) + ' ' + forecast.list[2].dt_txt.substring(11, 13)
 
@@ -52,8 +52,8 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
         forecastDate12 = forecast.list[4].dt_txt.substring(8, 10) + '/' + forecast.list[4].dt_txt.substring(5, 7) + '/' + forecast.list[4].dt_txt.substring(0, 4) + ' ' + forecast.list[4].dt_txt.substring(11, 13)
 
 
-
     }
+   
 
     
    
@@ -97,7 +97,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
                         <p className="font-bold pr-2">Humedad:</p>
                         <p>{weather.main.humidity + "%"}</p>
                     </div>
-                </div>\
+                </div>
                 
                 <hr />
                 
@@ -105,7 +105,7 @@ const CurrentData = ({loadingData, showData, weather, forecast})=>{
 
                     <div className="fore3h flex-col w-1/4 bg-yellow-100 rounded-lg m-1 mt-4 p-2">
 
-                        <p>{getNameData}h</p>
+                        <p>{forecastDate3}h</p>
                         <p>{(forecast.list[1].main.temp -273.15).toFixed(1) +"°C"} </p>
 
                         <p className="">
