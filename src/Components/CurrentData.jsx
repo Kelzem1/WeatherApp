@@ -58,7 +58,7 @@ const CurrentData = ({showData, weather, forecast})=>{
     
    
     return(
-        <div className="flex justify-center align-middle mt-12 opacity-80 tracking-widest text-yellow-50">
+        <div className="flex justify-center align-middle mt-44 opacity-80 tracking-widest text-yellow-50">
                {
                 showData === true ? (
             <div className="flex justify-center align-middle p-5 bg-teal-200 bg-opacity-40 text-neutral-950 w-7/12 rounded-sm gap-3 shadow-xl">

@@ -65,8 +65,8 @@ const GetApi = () =>{
 
   return(
     <div className="">
+       
        <Form newLocation={getLocation}/>
-
       <CurrentData
       showData = {show}
       loadingData = {loading}
